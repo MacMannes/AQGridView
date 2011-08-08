@@ -691,7 +691,7 @@ NSString * const AQGridViewSelectionDidChangeNotification = @"AQGridViewSelectio
 
 	CGRect rect = CGRectZero;
 	rect.size.width = self.bounds.size.width;
-	rect.size.height = self.contentSize.height -  (_gridData.topPadding + _gridData.bottomPadding);
+	rect.size.height = self.bounds.size.height -  (_gridData.topPadding + _gridData.bottomPadding);
 	rect.origin.y += _gridData.topPadding;
 
 	// Make sure background is an integral number of rows tall. That way, it draws patterned colours correctly on all OSes.
